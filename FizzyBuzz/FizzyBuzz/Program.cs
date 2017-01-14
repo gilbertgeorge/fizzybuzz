@@ -6,7 +6,7 @@ namespace FizzyBuzz
 	{
 		static void Main(string[] args)
 		{
-			for (Number number = new Number(1); number.Value <= 100; number.Value++)
+			for (Number number = new Number(1); number <= 100; number++)
 			{
 				if (number.IsMod3() && number.IsMod5())
 				{
@@ -22,7 +22,7 @@ namespace FizzyBuzz
 				}
 				else
 				{
-					Console.WriteLine(number.Value);
+					Console.WriteLine((int)number);
 				}
 			}
 
